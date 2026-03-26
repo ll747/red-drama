@@ -22,6 +22,31 @@ background-image:url("../images/home-bg.png") !important;
 
 }
 
+/* 首页：主内容占满剩余高度，页脚固定在视口底部 */
+.home-layout{
+
+display:flex;
+
+flex-direction:column;
+
+min-height:100vh;
+
+}
+
+.home-layout .home-main{
+
+flex:1 1 auto;
+
+}
+
+.home-layout footer{
+
+margin-top:0;
+
+flex-shrink:0;
+
+}
+
 .hero{
 
 padding:80px 0;
