@@ -1,1 +1,200 @@
-// 剧本反馈
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>剧本反馈 - 剧绎潇湘工作坊</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css?v=20260326-3">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+<img src="images/logo.png" height="40" alt="">
+
+剧绎潇湘工作坊
+
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+
+<li class="nav-item"><a class="nav-link" href="workshop.html">工作坊</a></li>
+
+<li class="nav-item"><a class="nav-link" href="scripts.html">剧本</a></li>
+
+<li class="nav-item"><a class="nav-link active" href="feedback.html" aria-current="page">剧本反馈</a></li>
+
+<li class="nav-item"><a class="nav-link" href="partners.html">合作单位</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<main class="container feedback-page">
+
+<h2 class="video-feedback-title text-center">用户视频反馈</h2>
+
+<div class="row g-4 justify-content-center mb-5">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="video-ornate-frame">
+
+<div class="ratio ratio-16x9">
+
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1ZK4y1o7m8&amp;page=1&amp;high_quality=1&amp;danmaku=0" title="哔哩哔哩视频" scrolling="no" allowfullscreen="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="video-ornate-frame">
+
+<div class="ratio ratio-16x9">
+
+<div class="video-placeholder-inner">更多视频<br>敬请期待</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="video-ornate-frame">
+
+<div class="ratio ratio-16x9">
+
+<div class="video-placeholder-inner">更多视频<br>敬请期待</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="video-ornate-frame">
+
+<div class="ratio ratio-16x9">
+
+<div class="video-placeholder-inner">更多视频<br>敬请期待</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="form-eval-card mx-auto" style="max-width:720px;">
+
+<h3 class="form-eval-title">留下您的评价</h3>
+
+<div class="form-eval-wrap">
+
+<label class="visually-hidden" for="feedback-text">评价内容</label>
+
+<textarea id="feedback-text" class="form-eval-textarea" placeholder="写下您的感受与建议…"></textarea>
+
+<button type="button" class="btn btn-danger form-eval-submit">提交</button>
+
+</div>
+
+</section>
+
+<div class="comment-list mx-auto" style="max-width:720px;">
+
+<div class="comment-item">
+
+<div class="comment-avatar" aria-hidden="true"></div>
+
+<div class="comment-body">
+
+<div class="comment-meta"><strong>杨同学</strong> · 3天前</div>
+
+<div class="comment-text">工作坊的剧本演绎形式很新颖，课堂氛围特别好，希望还能参加更多场次。</div>
+
+</div>
+
+<div class="comment-like" title="点赞">👍 112</div>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<p>
+
+关于我们 ｜ 联系我们 ｜ 史实介绍 ｜ 隐私政策 ｜ 服务条款 ｜ 友情链接
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+document.querySelector(".form-eval-submit").addEventListener("click", function () {
+
+  var t = document.getElementById("feedback-text").value.trim();
+
+  if (!t) {
+
+    alert("请先填写评价内容。");
+
+    return;
+
+  }
+
+  alert("感谢您的反馈！（当前为演示页面，未连接服务器保存。）");
+
+});
+
+</script>
+
+</body>
+
+</html>
