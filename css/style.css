@@ -14,6 +14,14 @@ background-attachment:fixed;
 
 }
 
+/* 仅首页使用海报背景，其余页面保持上方 html, body 的 bg.png */
+html.home,
+html.home body{
+
+background-image:url("../images/home-bg.png") !important;
+
+}
+
 .hero{
 
 padding:80px 0;
