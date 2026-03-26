@@ -5,7 +5,8 @@ font-family:"Microsoft YaHei";
 /* 页面背景：使用你的背景图铺满 */
 min-height:100vh;
 background-color:#f5f5f5; /* 兜底：图片加载失败时用这个颜色 */
-background-image:url("images/bg.png");
+/* 注意：style.css 在 css/ 目录下，images/ 需要用相对路径返回上一级 */
+background-image:url("../images/bg.png");
 background-repeat:no-repeat;
 background-position:center center;
 background-size:cover;
