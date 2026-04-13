@@ -14,13 +14,13 @@ background-attachment:fixed;
 
 }
 
-/* 仅首页使用海报背景；contain 完整显示整张图（不裁切），两侧或上下可能有留白 */
+/* 仅首页使用海报背景；contain 完整显示整张图；靠下对齐使构图略下移 */
 html.home,
 html.home body{
 
 background-image:url("../images/home-bg.jpg") !important;
 background-size:contain !important;
-background-position:center center !important;
+background-position:center bottom !important;
 background-repeat:no-repeat !important;
 
 }
@@ -40,19 +40,67 @@ min-height:100vh;
 
 flex:1 1 auto;
 
+display:flex;
+
+flex-direction:column;
+
+min-height:0;
+
 }
 
-.home-layout footer{
+.home-layout .home-main .flex-grow-1-home{
+
+flex:1 1 auto;
+
+}
+
+.home-footer{
 
 margin-top:0;
 
 flex-shrink:0;
+
+background:transparent !important;
+
+color:#fff !important;
+
+padding:1rem 0 1.25rem;
+
+text-align:center;
+
+text-shadow:0 1px 4px rgba(0,0,0,0.85);
+
+}
+
+.home-footer-links{
+
+color:#fff !important;
+
+font-size:0.9rem;
+
+}
+
+html.home .hero .hero-lead{
+
+color:#fff !important;
+
+text-shadow:0 1px 4px rgba(0,0,0,0.85);
+
+margin-bottom:1rem;
 
 }
 
 .hero{
 
 padding:80px 0;
+
+}
+
+html.home .hero{
+
+padding-top:48px;
+
+padding-bottom:24px;
 
 }
 
