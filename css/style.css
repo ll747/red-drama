@@ -14,11 +14,14 @@ background-attachment:fixed;
 
 }
 
-/* 仅首页使用海报背景，其余页面保持上方 html, body 的 bg.jpg */
+/* 仅首页使用海报背景；contain 完整显示整张图（不裁切），两侧或上下可能有留白 */
 html.home,
 html.home body{
 
 background-image:url("../images/home-bg.jpg") !important;
+background-size:contain !important;
+background-position:center center !important;
+background-repeat:no-repeat !important;
 
 }
 
