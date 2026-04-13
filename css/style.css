@@ -6,7 +6,7 @@ font-family:"Microsoft YaHei";
 min-height:100vh;
 background-color:#f5f5f5; /* 兜底：图片加载失败时用这个颜色 */
 /* 注意：style.css 在 css/ 目录下，images/ 需要用相对路径返回上一级 */
-background-image:url("../images/bg.png") !important;
+background-image:url("../images/bg.jpg") !important;
 background-repeat:no-repeat;
 background-position:center center;
 background-size:cover;
@@ -14,11 +14,11 @@ background-attachment:fixed;
 
 }
 
-/* 仅首页使用海报背景，其余页面保持上方 html, body 的 bg.png */
+/* 仅首页使用海报背景，其余页面保持上方 html, body 的 bg.jpg */
 html.home,
 html.home body{
 
-background-image:url("../images/home-bg.png") !important;
+background-image:url("../images/home-bg.jpg") !important;
 
 }
 
